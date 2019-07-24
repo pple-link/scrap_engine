@@ -1,0 +1,11 @@
+{
+  "name": "scrap_engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:people-x-blation/scrap_engine.git",
+  "author": "Q00 <jqyu.lee@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^1.19.0"
+  }
+}
