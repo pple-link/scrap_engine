@@ -6,6 +6,8 @@
   "author": "Q00 <jqyu.lee@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^1.19.0"
+    "express": "^4.17.1",
+    "puppeteer": "^1.20.0",
+    "request": "^2.88.0"
   }
 }
