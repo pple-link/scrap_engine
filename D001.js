@@ -16,13 +16,13 @@ const puppeteer = require('puppeteer');
 
 	await page.evaluate(
 		(em, pw) => {
-			document.querySelector('#id_email_2').value = em;
-			document.querySelector('#id_password_3').value = pw;
+			document.querySelector('#loginEmailField > div > input[type=text]').value = em;
+			document.querySelector('#login-form > fieldset > div.item_inp.item_tf > input[type=password]').value = pw;
 		},
 		email,
 		pw
 	);
-	await Promise.all([page.click('.btn_type2'), page.waitForNavigation({ waitUntil: 'networkidle0' })]);
+	await Promise.all([page.click('#login-form > fieldset > div.wrap_btn > button'), page.waitForNavigation({ waitUntil: 'networkidle0' })]);
 
 	const subject = '질문이 있습니다!';
 	const content =
